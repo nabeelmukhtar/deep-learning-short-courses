@@ -1,0 +1,39 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.10.12",
+    "heartbeatAt": "2023-10-04T14:35:45.808678",
+    "startedAt": "2023-10-04T14:35:43.109679",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "deep-learning-ai-short-courses/evaluating-debugging-generative-ai/04_llm_eval_starter.ipynb",
+    "codePathLocal": null,
+    "root": "C:\\Workspaces\\machine-learning",
+    "host": "DESKTOP-FRHRNGD",
+    "username": "Dell",
+    "executable": "C:\\Users\\Dell\\anaconda3\\envs\\machine-learning\\python.exe",
+    "cpu_count": 2,
+    "cpu_count_logical": 4,
+    "cpu_freq": {
+        "current": 2601.0,
+        "min": 0.0,
+        "max": 2601.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2601.0,
+            "min": 0.0,
+            "max": 2601.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 476.3061866760254,
+            "used": 131.07709121704102
+        }
+    },
+    "memory": {
+        "total": 15.883750915527344
+    }
+}
