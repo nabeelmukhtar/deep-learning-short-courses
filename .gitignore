@@ -158,3 +158,9 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+building-applications-vector-databases/data/all-the-news-3.zip
+building-applications-vector-databases/data/lesson2-wiki.csv.zip
+pretraining-llms/data/preprocessed_dataset.parquet
+reinforcement-learning-from-human-feedback/reinforcer-fulldata-logs/rlhf_526064905871_rlhf-train-template-20231030205747_reinforcer_-1123577188528947200_tensorboard_metrics_train_events.out.tfevents.1698759918.t1v-n-15629994-w-6.1.0.v2
+reinforcement-learning-from-human-feedback/reinforcer-logs/rlhf_526064905871_rlhf-train-template-20231025162358_reinforcer_4798865778428346368_tensorboard_metrics_train_events.out.tfevents.1698270146.t1v-n-42565d02-w-1.1.0.v2
+reinforcement-learning-from-human-feedback/reward-logs/rlhf_526064905871_rlhf-train-template-20231025162358_rewardmodeltrainer_-5577427763033276416_tensorboard_metrics_train_events.out.tfevents.1698255866.t1v-n-807add68-w-1.1.0.v2
