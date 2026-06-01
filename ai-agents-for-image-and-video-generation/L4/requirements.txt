@@ -1,0 +1,24 @@
+# python package requirements file
+
+# Note to our Learners: Our courses are created at a specific point in time. The models and libraries used will naturally change over time.
+# If you download and run the notebooks locally, you should create a Python virtual environment  
+# with the Python version matching the one used in the course and use this requirements.txt file to install the required Python packages.
+# Due to the wide diversity of platforms and environments, DeepLearning does not explicitly support running locally. However, if you encounter
+# issues, the course support channel is a good place to ask questions.
+
+
+# note which revision of python, for example 3.9.6
+# in this file, insert all the pip install needs, include revision
+
+google-genai==1.75.0
+google-cloud-aiplatform[evaluation]==1.150.0
+google-adk==1.32.0
+python-dotenv==1.2.2
+requests==2.33.1
+numpy==2.2.6
+pandas==2.3.3
+matplotlib==3.10.9
+pillow==12.2.0
+sentencepiece==0.2.1
+torch==2.11.0
+transformers==5.8.0
