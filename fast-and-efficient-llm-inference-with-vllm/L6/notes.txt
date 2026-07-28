@@ -1,0 +1,19 @@
+# Create and activate a venv for vllm
+uv venv ~/vllm-env --python 3.12
+source ~/vllm-env/bin/activate
+
+# Install vllm
+export VLLM_VERSION=0.18.0
+uv pip install https://github.com/vllm-project/vllm/releases/download/v${VLLM_VERSION}/vllm-${VLLM_VERSION}+cpu-cp38-abi3-manylinux_2_35_x86_64.whl --extra-index-url https://download.pytorch.org/whl/cpu --index-strategy unsafe-best-match
+
+# System deps (unchanged)
+sudo apt-get install -y --no-install-recommends libtcmalloc-minimal4 libnuma-dev
+
+# Set env vars
+export TC_PATH=$(find /usr -iname "*libtcmalloc_minimal.so.4" 2>/dev/null | head -1)
+export IOMP_PATH=~/vllm-env/lib/libiomp5.so
+export LD_PRELOAD="$TC_PATH:$IOMP_PATH"
+export VLLM_CPU_KVCACHE_SPACE=1
+
+# Serve
+vllm serve Qwen/Qwen3-0.6B --dtype=bfloat16 --max-model-len 4096
