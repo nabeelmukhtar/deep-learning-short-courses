@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}Confluence (simulated){% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='common.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='confluence.css') }}">
+</head>
+<body>
+  <div class="topbar">
+    <span class="brand">🟢 Confluence (simulated)</span>
+    <a class="navlink" href="{{ url_for('confluence_list') }}">Spaces</a>
+    <div class="spacer"></div>
+    <a class="navlink" href="{{ url_for('jira_board') }}">Switch to Jira →</a>
+  </div>
+  <main>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for m in messages %}<div class="flash">{{ m }}</div>{% endfor %}
+      {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+  </main>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"4c1c83ca2dd644dea02182b686a741bd","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
